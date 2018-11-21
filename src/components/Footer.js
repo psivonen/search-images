@@ -5,7 +5,7 @@ class Footer extends Component {
         return (
             <div>
                 <p style={{position: 'absolute', right: '0', bottom: '0',
-                    left: '0', padding: '20px''}}>
+                    left: '0', padding: '20px'}}>
                     Images provided by <a href="https://pixabay.com/" target="_blank" rel="noopener noreferrer" className='normal_link'>Pixabay.</a>
                 </p>
             </div>
