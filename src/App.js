@@ -5,7 +5,7 @@ import Sidebar from "./components/Sidebar";
 import SearchImages from "./components/SearchImages";
 import ReactDOM from "react-dom";
 
-class Navigation extends Component {
+class Info extends Component {
     render() {
         return (
             <div>
@@ -15,13 +15,12 @@ class Navigation extends Component {
     }
 }
 
-ReactDOM.render(<Navigation />, document.getElementById('sidebar'));
+ReactDOM.render(<Info />, document.getElementById('sidebar'));
 
 class App extends Component {
   render() {
     return (
         <div>
-
             <SearchImages/>
         </div>
     );
