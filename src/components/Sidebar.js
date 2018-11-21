@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import "../index.css";
 import Footer from "./Footer";
+import {Divider} from 'semantic-ui-react';
 
 class Sidebar extends Component {
 
@@ -10,6 +11,7 @@ class Sidebar extends Component {
             <div>
                 <div>
                     <h1>Search images</h1>
+                    <Divider style={{width: '92%', marginLeft: 'auto', marginRight: 'auto'}} inverted/>
                     <p className="info-text">
                         Search high resolution royalty free images for your needs. You can filter your search by amount
                         and
