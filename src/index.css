@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+h1 {
+    font-family: "Oswald", sans-serif;
+    font-weight: normal;
+    padding: 5px 10px 0 15px;
+    margin: 0;
+    font-size: 35px;
+    color: white;
+    text-transform: uppercase;
+}
+
+p {
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+    padding: 15px;
+    line-height: 20px;
+}
+
+.normal_link {
+    color: white;
+    padding-bottom: 1px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#sidebar {
+    background: url("mountains-3523153_1920.jpg");
+    background-size: cover;
+    width: 20%;
+    position: fixed;
+    display: flex;
+    height: auto;
+    min-height: 100%;
+    padding: 10px;
+}
+
+#root {
+    width: 75%;
+    float: right;
+    margin: 20px 30px;
+}
+
+hr {
+    width: 100%;
+    margin-bottom: 15px;
+    border: solid 1px #333333;
+}
+
+select {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    width: 100%;
+}
