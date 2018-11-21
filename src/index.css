@@ -69,3 +69,17 @@ select {
     background: #f1f1f1;
     width: 100%;
 }
+
+@media screen and (max-width: 800px) {
+    
+    #sidebar {
+        width: 100%;
+        position: relative;
+        height: auto;
+        min-height: 40%;
+    }
+
+    #root {
+        width: 90%;
+    }
+}
