@@ -37,7 +37,7 @@ class SearchImages extends Component {
         });
     };
 
-    // Amount of images shown is changed when selected amount changes
+    // Filter images displayed by amount, image type or by order.
     onSelectChange = event => {
         this.setState({[event.target.name]: event.target.value});
     };
