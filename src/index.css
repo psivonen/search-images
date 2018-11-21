@@ -38,6 +38,10 @@ p {
     font-weight: bold;
 }
 
+.normal_link:hover {
+    color: darkgrey;
+}
+
 #sidebar {
     background: url("mountains-3523153_1920.jpg");
     background-size: cover;
