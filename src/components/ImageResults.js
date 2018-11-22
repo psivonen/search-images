@@ -38,7 +38,7 @@ class ImageResults extends Component {
         // Display images on a grid, if user types something on the search bar.
         if (images) {
             imageContent = (
-                <Grid stackable columns={2}>
+                <Grid stackable columns={2} style={{paddingBottom: '30px'}}>
                     {images.map(img => (
                         <Grid.Column key={img.id} width={8} stretched>
                             <Segment>
