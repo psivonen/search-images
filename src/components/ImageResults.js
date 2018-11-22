@@ -35,7 +35,7 @@ class ImageResults extends Component {
         let imageContent;
         const {images} = this.props;
 
-              // Display images on a grid if user types something on the search bar.
+        // Display images on a grid if user types something on the search bar.
         if (images) {
 
             imageContent = (
