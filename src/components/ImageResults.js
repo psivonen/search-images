@@ -75,9 +75,7 @@ class ImageResults extends Component {
                         <Image src={this.state.currentImg} alt=""/>
                     </Modal.Content>
                     <Modal.Actions style={{paddingTop: '10px'}}>
-                        <Button onClick={this.handleClose}>
-                            Close
-                        </Button>
+                       <Button icon='close' onClick={this.handleClose}/>
                     </Modal.Actions>
 
                 </Modal>
