@@ -35,21 +35,23 @@ class ImageResults extends Component {
         let imageContent;
         const {images} = this.props;
 
-        // Display images on a grid, if user types something on the search bar.
+              // Display images on a grid if user types something on the search bar.
         if (images) {
+
             imageContent = (
-                <Grid stackable columns={2} style={{paddingBottom: '30px'}}>
+                <Grid>
                     {images.map(img => (
-                        <Grid.Column key={img.id} width={8} stretched>
+                        <Grid.Column key={img.id} mobile={16} tablet={8} computer={4} stretched>
                             <Segment>
-                                <Image src={img.largeImageURL} alt="" fluid/>
+                                <Image src={img.largeImageURL} alt=""/>
                                 <Label attached='bottom' style={{background: 'white'}}>
                                     <Label>
                                         by <a href={'https://pixabay.com/users/' + img.user + '-' + img.user_id}
                                               target='_blank' rel='noopener noreferrer'>{img.user}</a>
                                     </Label>
                                     <Label>
-                                        <a href={img.imageURL} target='_blank' rel='noopener noreferrer'>Download</a>
+                                        <a href={img.imageURL} target='_blank'
+                                           rel='noopener noreferrer'>Download</a>
                                     </Label>
                                     <Button size='tiny' icon='zoom-in' onClick={() => this.handleOpen(img.imageURL)}
                                             compact/>
@@ -59,7 +61,10 @@ class ImageResults extends Component {
                     ))}
                 </Grid>
             )
-
+            
+        } else {
+            imageContent = null;
+        }
         } else {
             imageContent = null;
         }
