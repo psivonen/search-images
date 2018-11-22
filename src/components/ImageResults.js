@@ -22,6 +22,8 @@ class ImageResults extends Component {
 
     render() {
 
+        // Position modal in the middle of the page.
+        // There is some error on the React Semantic UI and modal wouldn't go in the middle.
         const inlineStyle = {
             modal: {
                 marginTop: '100px',
@@ -30,12 +32,12 @@ class ImageResults extends Component {
             }
         };
 
-        let imageListContent;
+        let imageContent;
         const {images} = this.props;
 
-        // Display images on a grid
+        // Display images on a grid, if user types something on the search bar.
         if (images) {
-            imageListContent = (
+            imageContent = (
                 <Grid stackable columns={2}>
                     {images.map(img => (
                         <Grid.Column key={img.id} width={8} stretched>
@@ -59,12 +61,12 @@ class ImageResults extends Component {
             )
 
         } else {
-            imageListContent = null;
+            imageContent = null;
         }
 
         return (
             <Container>
-                {imageListContent}
+                {imageContent}
                 <Modal
                     open={this.state.open}
                     close={this.state.handleClose}
@@ -77,7 +79,6 @@ class ImageResults extends Component {
                     <Modal.Actions style={{paddingTop: '10px'}}>
                        <Button icon='close' onClick={this.handleClose}/>
                     </Modal.Actions>
-
                 </Modal>
             </Container>
         );
