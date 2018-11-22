@@ -41,7 +41,7 @@ class ImageResults extends Component {
             imageContent = (
                 <Grid>
                     {images.map(img => (
-                        <Grid.Column key={img.id} mobile={16} tablet={8} computer={4} stretched>
+                        <Grid.Column key={img.id} mobile={16} tablet={8} computer={5} stretched>
                             <Segment>
                                 <Image src={img.largeImageURL} alt=""/>
                                 <Label attached='bottom' style={{background: 'white'}}>
