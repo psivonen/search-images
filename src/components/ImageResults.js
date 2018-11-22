@@ -47,7 +47,7 @@ class ImageResults extends Component {
                                               target='_blank' rel='noopener noreferrer'>{img.user}</a>
                                     </Label>
                                     <Label>
-                                        {img.imageWidth} x {img.imageHeight}px
+                                        <a href={img.imageURL} target='_blank' rel='noopener noreferrer'>Download</a>
                                     </Label>
                                     <Button size='tiny' icon='zoom-in' onClick={() => this.handleOpen(img.imageURL)}
                                             compact/>
