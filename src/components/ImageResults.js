@@ -65,9 +65,6 @@ class ImageResults extends Component {
         } else {
             imageContent = null;
         }
-        } else {
-            imageContent = null;
-        }
 
         return (
             <Container>
